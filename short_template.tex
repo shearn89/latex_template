@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%
+% Latex template for report writing
+% 	author: Alex Shearn
+% 	source: github.com/shearn89/latex_template
+%
+% NOTES:
+% >>>> Compile with XeLaTex <<<<
+% It'll complain about fonts if you don't have Menlo and Minion pro
+% This was written on a Mac, which has these fonts.
+% I also installed MacTex/TexShop, which has the right packages.
+%
+% That is all.
+%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{appendix}
+\usepackage{textcomp}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage[margin=10pt,small,bf]{caption}
+
+\sloppy         % better line breaks
+
+% font stuff
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{Minion Pro}
+
+% layout, ripped from interspeech
+\oddsidemargin -0.20in
+\evensidemargin -0.20in
+\topmargin 0truept 
+\headheight 0truept
+\footskip 0truept
+\textheight 235truemm
+\textwidth 170truemm
+\voffset -41truept
+\headsep 43truept
+
+% header
+\pagestyle{myheadings}
+
+%
+% DOCUMENT STARTS
+%
+
+\begin{document}
+
+% TITLE PAGE
+\begin{center}
+Awesome Title
+\end{center}
+% END TITLE PAGE
+
+\section{Introduction}
+\end{document}
